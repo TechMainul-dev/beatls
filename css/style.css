@@ -1,0 +1,143 @@
+/* ================================================
+                Common CSS Start
+================================================ */
+* {
+    padding: 0px;
+    margin: 0px;
+    outline: 0px;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+
+.banner_content h4,
+h1,
+a {
+    text-transform: uppercase;
+}
+
+.banner_content h4,
+h1 {
+    font-family: 'oswald', sans-serif;
+}
+
+/* ================================================
+                Header part CSS Start
+================================================ */
+header {
+    background: #0872b9;
+    padding-top: 12px;
+    color: #fff;
+}
+
+.welcome p {
+    text-transform: capitalize;
+}
+
+.icon ul {
+    float: right;
+}
+
+.icon ul li {
+    float: left;
+    padding: 0 15px;
+}
+
+.icon ul li a {
+    color: #fff;
+    transition: all linear .3s;
+}
+
+.icon ul li a:hover {
+    color: #353535;
+    transition: all linear .3s;
+}
+
+/* ================================================
+                Header part CSS End  
+================================================= */
+
+/* ================================================
+                Navbar CSS Start
+================================================== */
+.navbar-nav .nav-item .nav-link.active {
+    color: #0872b9;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #353535;
+    padding: 0 10px;
+}
+
+/* ================================================
+                Navbar CSS End
+================================================== */
+
+/* ================================================
+                Banner part CSS Start
+================================================== */
+
+#banner {
+    background: url(../img/Beatles-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner_overlay {
+    padding: 87px 0;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+.banner_content {
+    text-align: right;
+    color: #fff;
+}
+
+.banner_content h4 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.banner_content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.banner_content p {
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.banner_content a {
+    padding: 12px 30px;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-left: 20px;
+    transition: all linear .3s;
+}
+
+.banner_content a:hover {
+    background-color: #0872b9;
+    border: 2px solid #0872b9;
+    transition: all linear .3s;
+}
+
+/* ================================================
+                Banner part CSS End
+================================================== */
