@@ -22,6 +22,7 @@ h4,
 h1,
 .banner_content a {
     text-transform: uppercase;
+    margin-bottom: 0px;
 }
 
 p {
@@ -29,6 +30,11 @@ p {
     line-height: 25px;
     font-weight: 400;
     font-family: 'Myriad Pro', sans-serif;
+    margin-bottom: 0px;
+}
+
+ul {
+    list-style: none;
 }
 
 
@@ -47,7 +53,6 @@ header {
 
 .icon ul {
     float: right;
-    list-style: none;
 }
 
 .icon ul li {
@@ -82,6 +87,13 @@ header {
 .navbar-nav .nav-item .nav-link {
     color: #353535;
     padding: 0 10px;
+    transition: all linear .3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    transition: all linear .6s;
+    background-color: rgb(149, 228, 85);
+    border-radius: 20px 5px;
 }
 
 /* ================================================
@@ -258,6 +270,7 @@ Service part CSS Start
 
 .service_content p {
     padding-top: 5px;
+    color: rgb(85, 82, 82);
 }
 
 .service_main:hover .service_icon,
@@ -273,4 +286,253 @@ Service part CSS Start
 
 /* ================================================
 Service part CSS End
+================================================== */
+
+/* ================================================
+Portfolio part CSS Start
+================================================== */
+
+.small_img,
+.big_img {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.gly_overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: .3s;
+}
+
+.gly_overlay a {
+    height: 40px;
+    width: 40px;
+    background-color: #5bc5f4;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+
+
+.small_img:hover .gly_overlay,
+.big_img:hover .gly_overlay {
+    transform: scale(1);
+    transition: .3s;
+}
+
+/* ================================================
+Portfolio part CSS End
+================================================== */
+
+
+/* ================================================
+Our team part CSS start
+================================================== */
+.team_img {
+    position: relative;
+}
+
+.team_overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 38%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    transform: scale(0);
+}
+
+.team_overlay ul {
+    padding-left: 0;
+}
+
+.team_overlay ul li a {
+    height: 40px;
+    width: 40px;
+    border: 2px solid #fff;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    display: block;
+    border-radius: 50%;
+    margin: 20px 0;
+    transition: .3s;
+}
+
+.team_overlay ul li a:hover {
+    background-color: #5bc5f4;
+    border: 2px solid #5bc5f4;
+    transition: .3s;
+}
+
+.team_img:hover .team_overlay {
+    transform: scale(1);
+    transition: .3s;
+}
+
+.team_title {
+    text-align: center;
+}
+
+.team_main:hover .team_title h4 {
+    color: #5bc5f4;
+}
+
+/* ================================================
+Our team part CSS End
+================================================== */
+
+/* ================================================
+Testimonial Part CSS Start
+================================================== */
+.round_img {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.piramid {
+    top: -20px;
+    left: 45%;
+    transform: rotate(45deg);
+    height: 40px;
+    width: 40px;
+    background-color: #f1f1f1;
+    position: absolute;
+    z-index: -1;
+}
+
+.testimonial_content {
+    padding: 20px;
+    position: relative;
+}
+
+.testimonial_content {
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.testimonial_content ul {
+    padding-left: 0px;
+}
+
+.testimonial_content ul li {
+    display: inline-flex;
+}
+
+.testimonial_content ul li a {
+    color: #5bc5f4;
+}
+
+.testimonial_content h4 {
+    /* padding-top: 15px; */
+}
+
+.testimonial_content p {
+    font-weight: bold;
+}
+
+/* ================================================
+Testimonial Part CSS End
+================================================== */
+
+/* ================================================
+Footer Part CSS Start
+================================================== */
+#footer {
+    background-color: #353535;
+    margin-top: 50px;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 13px;
+}
+
+.f_con p {
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.footer_common_head h4 {
+    text-transform: none;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+.f_icon ul {
+    padding-left: 0px;
+}
+
+.f_icon ul li a {
+    background-color: #5bc5f4;
+    border: 2px solid #5bc5f4;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    display: block;
+    border-radius: 50%;
+    transition: .3s;
+    margin-top: 5px;
+}
+
+.impt_link ul {
+    padding-left: 0;
+    font-size: 13px;
+}
+
+.impt_link ul li {
+    padding-bottom: 10px;
+    line-height: 25px;
+}
+
+.impt_link ul li a {
+    color: #fff;
+}
+
+.impt_link a:hover {
+    color: #5bc5f4;
+}
+
+.flicker img {
+    padding: 5px;
+}
+
+footer {
+    background-color: #555555;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+footer a {
+    color: #5bc5f4;
+}
+
+footer:hover {
+    background-color: hsl(184, 73%, 22%);
+    color: yellow;
+}
+
+footer a:hover {
+    color: #5bc5f4;
+    font-weight: bolder;
+}
+
+/* ================================================
+Footer Part CSS End
 ================================================== */
